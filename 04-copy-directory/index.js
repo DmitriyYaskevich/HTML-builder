@@ -10,7 +10,7 @@ function copyDir(dir, copyFile) {
 
     fs.readdir(dir, { withFileTypes: true }, (err, data) => {
       if (err) {
-        console.log('Error:', err.message);
+        console.log('Err');
       } else {
         data.forEach(dat => {
           if (dat.isFile()) {
